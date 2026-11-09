@@ -1,0 +1,62 @@
+[
+    {
+        "employee_id": "EMP001",
+        "name": "Emma Smith",
+        "job_title": "Senior Marketing Manager",
+        "department": "Marketing",
+        "reporting_structure": {
+            "manager": "David Chen",
+            "direct_reports": [
+                "Liam Johnson",
+                "Olivia Davis"
+            ]
+        },
+        "balances": {
+            "pto_days_remaining": 12,
+            "sick_leaves_reminder": 8,
+            "pto_days_used": 8,
+            "sick_leaves_used": 2
+        },
+        "employment_type": "Full-Time",
+        "location": "New York Office"
+    },
+    {
+        "employee_id": "EMP002",
+        "name": "David Chen",
+        "job_title": "Director of Marketing",
+        "department": "Marketing",
+        "reporting_structure": {
+            "manager": "Sarah Miller",
+            "direct_reports": [
+                "Emma Smith",
+                "James Wilson"
+            ]
+        },
+        "balances": {
+            "pto_days_remaining": 5,
+            "sick_leaves_remaining": 10,
+            "pto_days_used": 15,
+            "sick_leaves_used": 0
+        },
+        "employment_type": "Full-time",
+        "location": "Remote"
+    },
+    {
+        "employee_id": "EMP003",
+        "name": "Liam Johnson",
+        "job_title": "Marketing Associate",
+        "department": "Marketing",
+        "reporting_structure": {
+            "manager": "Emma Smith",
+            "direct_reports": []
+        },
+        "balances": {
+            "pto_days_remaining": 18,
+            "sick_leaves_remaining": 5,
+            "pto_days_used": 2,
+            "sick_leaves_used": 5
+        },
+        "employment_type": "Full-time",
+        "location": "New York Office"
+    }
+]

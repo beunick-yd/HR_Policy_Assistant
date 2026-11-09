@@ -1,0 +1,27 @@
+[
+    {
+        "policy_name": "Paid Time Off (PTO)",
+        "category": "Leave Policies",
+        "description": "All full-time employees are entitled to 20 days of Paid Time Off (PTO) per calendar year. Employees can carry over a maximum of 5 unused PTO days into the next year. PTO must be requested at least two weeks in advance for absences exceeding 3 days."
+    },
+    {
+        "policy_name": "Sick Leave",
+        "category": "Leave Policies",
+        "description": "The company provides 10 paid sick days per year for full-time employees. Sick leave can be used for personal illness, medical appointments, or caring for a sick family member. A doctor's note is required for sick leave exceeding 3 consecutive days."
+    },
+    {
+        "policy_name": "Remote Work Policy",
+        "category": "Work Arrangements",
+        "description": "The company operates on a hybrid model. Employees are allowed to work remotely up to 3 days per week. Tuesdays and Thursdays are mandatory in-office days for team collaboration. Fully remote work requires explicit approval from the department head."
+    },
+    {
+        "policy_name": "Health Benefits",
+        "category": "Benefits",
+        "description": "Comprehensive health, dental, and vision insurance are available to all full-time employees starting on their first day of employment. The company covers 80% of the premium for the employee and 50% for dependents."
+    },
+    {
+        "policy_name": "Code of Conduct",
+        "category": "Conduct Policies",
+        "description": "The company is committed to a safe, inclusive, and harassment-free workplace. All employees must treat colleagues, clients, and partners with respect. Any breaches of the Code of Conduct, including discrimination or harassment, will result in disciplinary action up to termination."
+    }
+]
