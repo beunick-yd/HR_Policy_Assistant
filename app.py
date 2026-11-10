@@ -26,11 +26,18 @@ workflow = intialize_rag()
 
 query=st.text_input("Enter your question (e.g., 'How many PTO days does Emma have left?'):")
 
+if "thread_id" not in st.session_state:
+    st.session_state.thread_id = "user_session_1"
+
 if(st.button("Submit") and query):
     with st.spinner("Searching policies and employee data...."):
-        result = workflow.invoke({
-            "messages":[HumanMessage(content=query)]
-        })
+        
+        config = {"configurable":{"thread_id":st.session_state.thread_id}}
+        
+        result = workflow.invoke(
+            {"messages":[HumanMessage(content=query)]},
+            config=config
+        )
 
         finalMsg = result['messages'][-1]
         st.subheader("Answer: ")

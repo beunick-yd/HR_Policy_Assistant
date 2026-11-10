@@ -6,7 +6,7 @@ from typing import Annotated,Sequence,TypedDict
 from langgraph.graph.message import add_messages
 from langchain_core.messages import BaseMessage,HumanMessage,AIMessage,ToolMessage
 from langgraph.prebuilt import ToolNode,tools_condition
-
+from langgraph.checkpoint.memory import InMemorySaver
 class State(TypedDict):
     messages : Annotated[Sequence[BaseMessage],add_messages]
 
@@ -16,7 +16,9 @@ def build_rag_workflow(vector_store):
         model='gemini-3.5-flash',
         temperature=0
     )
-
+    
+    checkpointer = InMemorySaver()
+    
     retriever = vector_store.as_retriever(
         search_type='similarity',
         search_kwargs={'k':4}
@@ -61,4 +63,4 @@ def build_rag_workflow(vector_store):
     graph.add_conditional_edges('chatNode',tools_condition)
     graph.add_edge('tools','chatNode')
 
-    return graph.compile()
+    return graph.compile(checkpointer)
